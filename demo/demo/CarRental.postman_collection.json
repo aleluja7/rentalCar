@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "d2063e00-0f6e-4707-a46b-b96d39836d7b",
+		"name": "CarRental",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Car",
+			"item": [
+				{
+					"name": "api/cars findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/car/{matricula}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/car/1111BBB",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"car",
+								"1111BBB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/car/{type} SUV",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/cars/type/SUV",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cars",
+								"type",
+								"SUV"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/car/{type} Premium",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/cars/type/premium",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cars",
+								"type",
+								"premium"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/car/{type} small",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/cars/type/small",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cars",
+								"type",
+								"small"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de coches alquilados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/cars/type/inventory/rented/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cars",
+								"type",
+								"inventory",
+								"rented",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de coches es stock",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/cars/type/inventory/rented/false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cars",
+								"type",
+								"inventory",
+								"rented",
+								"false"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calcular precio SUV x dias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/car/suv/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"car",
+								"suv",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calcular precio SUV x dias extra",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/car/suv/extra/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"car",
+								"suv",
+								"extra",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calcular precio Premium extra days",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/car/premium/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"car",
+								"premium",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calcular precio Premium x Dias Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/car/premium/extra/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"car",
+								"premium",
+								"extra",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calcular precio small x dias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/car/small/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"car",
+								"small",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calcular precio small extra days",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/car/small/extra/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"car",
+								"small",
+								"extra",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findBy Document id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/customer/11111111B",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"customer",
+								"11111111B"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findBy Document id Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/customer/11111111B/rentcar/suv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"customer",
+								"11111111B",
+								"rentcar",
+								"suv"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
